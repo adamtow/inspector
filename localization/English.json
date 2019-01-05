@@ -50,6 +50,7 @@
 	    "menu.true": "True",
 	    "prompt.base64": "This may be a base64 encoded object. Decode and Quick Look or view the string?",
 	    "prompt.changeLanguage": "Choose a language or copy the localization template",
+	    "prompt.jump": "Jump to Page",
 	    "prompt.revert": "Are you sure you want to revert the object back to the original object? This operation cannot be undone.",
 	}
 }
