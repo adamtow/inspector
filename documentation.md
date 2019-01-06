@@ -38,9 +38,12 @@ The Inspector interface has three sections:
 
 ### Navigation
 
+- **Depth**: The menu prompt will display the current path of the object that you are inspecting. 
 - **Continue**: This returns you back to the shortcut that called Inspector. All changes you have made to the object will be preserved and returned. 
 - **Back to Top**: This menu item appears when you have gone at least two levels deeper into the inspected object. Back to Top returns you to the root of the inspected object. All changes you have made to the object will be preserved. 
 - **Back**: This menu item appears when you have gone one level deeper into the inspected object. Tapping Back takes you one level up the object depth chain. All changes you have made to the object will be preserved. 
+
+![Continue, Back to Top, and Back](https://atow.files.wordpress.com/2019/01/f700ff4c-d00a-49d6-a141-61c5e7039a8d.png?w=1280)
 
 ### Object
 This section displays the portion of the object currently being inspected. Tapping on a singular object (Text, Number, or Boolean) will display the object. Tapping on a dictionary or list will cause Inspector to drill down and inspect that object. 
