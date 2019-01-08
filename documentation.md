@@ -4,7 +4,7 @@ Inspector is a tool for shortcut developers to inspect and modify runtime object
 
 ![Go Beyond Show Result and Quick Look with Inspector](https://atow.files.wordpress.com/2019/01/ebb3a11d-43d7-4fe1-a3c0-fe4403c0a6a8.png?w=1280)
 
-Inspector is great for viewing and changing API responses and other complex list and dictionary objects. 
+Inspector is great for viewing and changing JSON API responses and other complex list and dictionary objects. 
 
 ![Inspecting a web API request](https://atow.files.wordpress.com/2019/01/35d3c4e8-bff9-45c6-b5ef-8e699146b078.png?w=1280)
 
@@ -54,9 +54,10 @@ This section displays the portion of the object currently being inspected. Tappi
 
 ### Actions
 
-- **Copy Object to Clipboard**: copies the modified object to your iOS device’s clipboard. 
-- **Share Object**: Performs a Quick Look on the modified object. 
-- **Revert Object to Original**: The original object will replace any changes you may have made. This operation can be undone. 
+- **Quick Look**: Performs a Quick Look Action on the current object. 
+- **Copy to Clipboard**: Copies the modified object to your iOS device’s clipboard. Depending on the [Copy Locally setting](#settings), this object may be on just your local clipboard or available to all your supported iCloud devices via Handoff. 
+- **Share**: Displays the Share Sheet for the current object. 
+- **Revert Object to Original**: The current object will be replaced by the original object.  Any changes you may have made will be lost. This operation can be undone. 
 - **About Inspector**: Displays the Inspector About screen, where you can find the current version and build number for Inspector.
 - **Help**: Opens the documentation you are reading now. 
 - **Settings**: Displays the [Inspector Settings menu](#settings).
@@ -113,9 +114,11 @@ When a List Pagination value in [Settings](#settings) has been set, the list wil
 
 >Note: Converting a list to a dictionary may take some time for large lists.
 
+When using the Quick Look, Copy to Clipboard, and Share Actions alongside a set value for List Pagination, the entire list will be used with the action instead of the page slice you are viewing. 
+
 <span id="returning" class="section-header"></span> 
 ## Returning Object
-Tap Continue to return the modified object back to the calling shortcut. Lists that had been converted to a dictionaries will be transformed back to a list prior to being returned. 
+Tap **Continue** to return the modified object back to the calling shortcut. Lists that had been converted to a dictionaries will be transformed back to a list prior to being returned. 
 
 <span id="revert" class="section-header"></span> 
 ## Reverting Object
@@ -129,9 +132,9 @@ You can adjust the following settings in Inspector:
 
 - **Adjust List Pagination**: Set the number of list items to be displayed on each page in Inspector. 
 - **Change Language**: Inspector is currently localized in English, but it’s ready for localization. If you would like to help with localizing Inspector, please <a href=“mailto:inspector+localization@tow.com”>contact me</a>.
-- **Copy to Local Clipboard**: Choose whether you want objects to be copied to the global clipboard (used with Handoff) or the local clipboard of your iOS device.
+- **Copy to Local Clipboard**: Choose whether you want objects to be copied to the global clipboard (used with Handoff) or just the local clipboard of your iOS device.
 
-![Inspector Settings](https://atow.files.wordpress.com/2019/01/44cee764-3afe-465d-a725-297a07e2b03f.png?w=1280)
+![Inspector Settings](https://atow.files.wordpress.com/2019/01/6892a1d1-c260-40c8-9782-61876ecf74c0.png?w=1280)
 
 <span id="update" class="section-header"></span> 
 ## Updating Inspector
