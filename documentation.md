@@ -1,4 +1,4 @@
-# Inspector Documentation
+# Inspector
 
 Inspector is a utility for shortcut developers to inspect and modify runtime objects such as dictionaries, lists, text, numbers, and boolean values. It is a powerful tool that goes far beyond the Show Result and Quick Look actions. Inspector is great for viewing and changing JSON API responses and other complex list and dictionary objects. 
 
@@ -12,9 +12,13 @@ Inspector is a utility for shortcut developers to inspect and modify runtime obj
 - [Exploring the Inspector Interface](#explore)
 - [Modifying Objects](#modify)
 - [Handling Lists](#lists)
+- [Returning Objects](#return)
+- [Reverting Objects](#revert)
 - [Changing Settings](#settings)
 - [Updating Inspector](#update)
 - [License](#license)
+
+<hr />
 
 <span id="installation" class="section-header"></span>
 ## Downloading and Installing 
@@ -22,13 +26,17 @@ The latest version of Inspector can be found at RoutineHub.co:
 
 <a href="https://routinehub.co/shortcut/1106” class=“button button-primary">Download Inspector from RoutineHub.co</a>
 
+<hr />
+
 <span id="usage" class="section-header"></span> 
 ## Using Inspector
 Place a Run Shortcut Action with "_inspector" as the shortcut immediately after the object you wish to view. 
 
-![Inspecting objects with Inspector](https://atow.files.wordpress.com/2019/01/6b54e455-1dde-4fa4-84da-abc24788aedb.png?w=1280)
+![Inspecting objects with Inspector](https://atow.files.wordpress.com/2019/01/90bc44ca-343a-4d33-b842-f3dd035edf16.png?w=1280)
 
 When your shortcut runs and reaches the Run Shortcut call, Inspector will launch and expand the object for viewing and editing. You can drill down into lists and dictionaries and view/modify singular objects. Objects that can’t be edited natively are displayed using Quick Look.
+
+<hr />
 
 <span id="explore" class="section-header"></span>
 ## Exploring the Inspector Interface
@@ -45,7 +53,7 @@ The Inspector interface has three sections:
 - **Back to Top**: This menu item appears when you are at least two levels away from the root of the inspected object. Back to Top returns you to the root. All changes you have made to the object will be preserved. 
 - **Back**: This menu item appears when you are at least one level away from the root of the inspected object. Tapping Back takes you one level up the object depth chain. All changes you have made at the current depth will be preserved. 
 
-![Continue, Back to Top, and Back](https://atow.files.wordpress.com/2019/01/f700ff4c-d00a-49d6-a141-61c5e7039a8d.png?w=1280)
+![Continue, Back to Top, and Back](https://atow.files.wordpress.com/2019/01/84655503-fea8-43cb-9fbd-6bddb4486c09.png?w=1280)
 
 ### Object
 This section displays the portion of the object currently being inspected. Tapping on a singular object (Text, Number, or Boolean) will display the object. Tapping on a dictionary or list will cause Inspector to drill down and inspect the selected object. 
@@ -60,13 +68,17 @@ This section displays the portion of the object currently being inspected. Tappi
 - **Help**: Opens the documentation you are reading now. 
 - **Settings**: Displays the [Inspector Settings menu](#settings).
 
+<hr />
+
 <span id="modify" class="section-header"></span> 
 ## Modifying Objects 
 Tapping on a singular object like Text, Numbers, or Booleans will open an editor window allowing you to modify the object.
 
-![Modifying objects with Inspector](https://atow.files.wordpress.com/2019/01/902ccfe6-1d32-48a9-9335-7d076ee9cbc0.png?w=1280)
+![Modifying objects with Inspector](https://atow.files.wordpress.com/2019/01/7161a3bd-4174-43c9-ab76-e8968fb56575.png?w=1280)
 
 Changes you make will be applied to the singular object. Inspector will then re-display the parent object (list or dictionary), where you will be able to see that your changes were made.
+
+<hr />
 
 <span id="lists" class="section-header"></span> 
 ## Handling Lists
@@ -114,38 +126,50 @@ When a List Pagination value in [Settings](#settings) has been set, the list wil
 
 The entire list will be used with the Quick Look, Copy to Clipboard, Share, and Revert to Original Object actions.
 
-<span id="returning" class="section-header"></span> 
-## Returning Object
+<hr />
+
+<span id="return" class="section-header"></span> 
+## Returning Objects
 Tap **Continue** to return the modified object back to the calling shortcut. Lists that had been converted to a dictionaries will be transformed back to a list prior to being returned. 
 
+<hr />
+
 <span id="revert" class="section-header"></span> 
-## Reverting Object
+## Reverting Objects
 You can revert back to the original object at any depth level by tapping **Revert to Original Object**. Any changes you have made to the current object will be removed. This operation cannot be undone.
 
 ![Reverting Back to the Original Object](https://atow.files.wordpress.com/2019/01/8be50ec2-8bcb-41a7-b892-bd8e057c2708.png?w=1280)
 
 >Tip: If you want to revert back to the object as it was originally passed into Inspector, return to the root level by tapping either **Back to Top** or **Back** multiple times until only the **Continue** navigation menu item remains. Then, tap **Revert to Original Object**.
 
+<hr />
+
 <span id="settings" class="section-header"></span> 
 ## Changing Settings
 You can adjust the following settings in Inspector:
+
+![Inspector Settings](https://atow.files.wordpress.com/2019/01/04c217b4-d484-4ddf-8782-0ae80ebc942a.png?w=1280)
 
 - **Adjust List Pagination**: Set the number of list items to be displayed on each page in Inspector. 
 - **Change Language**: Inspector is currently localized in English, but it’s ready for localization. If you would like to help with localizing Inspector, please <a href=“mailto:inspector+localization@tow.com”>contact me</a>.
 - **Copy to Local Clipboard**: Choose whether you want objects to be copied to the global clipboard (used with Handoff) or just the local clipboard of your iOS device.
 - **Show Debug Menu**: When enabled, additional menu items will appear in the Inspector main window for viewing the Object Key Stack, Current Object, and the Current Object Stack.
 
-![Inspector Settings](https://atow.files.wordpress.com/2019/01/04c217b4-d484-4ddf-8782-0ae80ebc942a.png?w=1280)
+![Inspector Debug Menu](https://atow.files.wordpress.com/2019/01/2735a491-483b-430d-99dd-514dc829319f.png?w=1280)
 
-![Inspector Debug Menu](https://atow.files.wordpress.com/2019/01/3dad8404-a7e3-46d3-9c4d-e0517cd252cd.png?w=1280)
+<hr />
 
 <span id="update" class="section-header"></span> 
 ## Updating Inspector
 Run Inspector without any parameters from the Shortcuts app to display the welcome menu with an option to Check for Updates.
 
-Updates are handled by UpdateKit. 
+Updates are handled by [UpdateKit](http://mikebeas.com/updatekit/). 
 
->Note: Due to the large size of Inspector, a regular call to UpdateKit will result in a blank OK screen when trying to download the update. As a result, tapping Check for Updates… will display a temporary Safari page (the window closes after 30 seconds) with a link and auto-redirect to UpdateKit. You’ll have to tap the link to Open UpdateKit in Shortcuts to proceed.
+>Note: Due to the large size of Inspector, a regular call to UpdateKit will result in a blank OK screen when trying to download the update. As a result, tapping **Check for Updates**… will display a temporary Safari page (the window closes after 30 seconds) with a link to run the UpdateKit shortcut. You’ll have to tap **Open this page in “Shortcuts”?** or **Check for Inspector Updates** to proceed.
+
+![Checking for Updates](https://atow.files.wordpress.com/2019/01/6848e2d9-8e38-4e89-9454-90ea3fa75a54.png?w-1280)
+
+<hr />
 
 <span id="license" class="section-header"></span> 
 # License
@@ -156,4 +180,3 @@ Updates are handled by UpdateKit.
 >The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 >
 >THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-
