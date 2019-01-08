@@ -34,6 +34,7 @@
 	    "menu.prefs.pagination": "Adjust List Pagination…",
 	    "menu.prefs.update": "Check for Updates…",
 	    "menu.prompt": "Inspecting the contents of:\n{{Object Name}}",
+	    "menu.quicklook": "Quick Look Object…",
 	    "menu.resume": "Continue…",
 	    "menu.revert": "Revert to Original Object…",
 	    "menu.revert.confirm": "Revert",
