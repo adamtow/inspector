@@ -1,10 +1,8 @@
 # Inspector Documentation
 
-Inspector is a tool for shortcut developers to inspect and modify runtime objects such as dictionaries, lists, text, numbers, and boolean values. It’s a powerful tool that goes far beyond Show Result and Quick Look.
+Inspector is a utility for shortcut developers to inspect and modify runtime objects such as dictionaries, lists, text, numbers, and boolean values. It is a powerful tool that goes far beyond the Show Result and Quick Look actions. Inspector is great for viewing and changing JSON API responses and other complex list and dictionary objects. 
 
 ![Go Beyond Show Result and Quick Look with Inspector](https://atow.files.wordpress.com/2019/01/ebb3a11d-43d7-4fe1-a3c0-fe4403c0a6a8.png?w=1280)
-
-Inspector is great for viewing and changing JSON API responses and other complex list and dictionary objects. 
 
 ![Inspecting a web API request](https://atow.files.wordpress.com/2019/01/35d3c4e8-bff9-45c6-b5ef-8e699146b078.png?w=1280)
 
@@ -26,7 +24,7 @@ The latest version of Inspector can be found at RoutineHub.co:
 
 <span id="usage" class="section-header"></span> 
 ## Using Inspector
-Place a Run Shortcut Action with "_inspector" as the designated shortcut immediately after the object you wish to view. 
+Place a Run Shortcut Action with "_inspector" as the shortcut immediately after the object you wish to view. 
 
 ![Inspecting objects with Inspector](https://atow.files.wordpress.com/2019/01/6b54e455-1dde-4fa4-84da-abc24788aedb.png?w=1280)
 
@@ -55,9 +53,9 @@ This section displays the portion of the object currently being inspected. Tappi
 ### Actions
 
 - **Quick Look**: Performs a Quick Look Action on the current object. 
-- **Copy to Clipboard**: Copies the modified object to your iOS device’s clipboard. Depending on the [Copy Locally setting](#settings), this object may be on just your local clipboard or available to all your supported iCloud devices via Handoff. 
-- **Share**: Displays the Share Sheet for the current object. 
-- **Revert Object to Original**: The current object will be replaced by the original object.  Any changes you may have made will be lost. This operation can be undone. 
+- **Copy to Clipboard**: Copies the modified object to your iOS device’s clipboard. Depending on the [Copy Locally setting](#settings), this object may be placed on your local clipboard or made available to all your supported iCloud devices via Handoff.
+- **Share**: Opens the iOS Share sheet for the current object. 
+- **Revert to Original Object**: The current object will be replaced by the original object.  Any changes you may have made will be lost. This operation can be undone. 
 - **About Inspector**: Displays the Inspector About screen, where you can find the current version and build number for Inspector.
 - **Help**: Opens the documentation you are reading now. 
 - **Settings**: Displays the [Inspector Settings menu](#settings).
@@ -68,7 +66,7 @@ Tapping on a singular object like Text, Numbers, or Booleans will open an editor
 
 ![Modifying objects with Inspector](https://atow.files.wordpress.com/2019/01/902ccfe6-1d32-48a9-9335-7d076ee9cbc0.png?w=1280)
 
-Changes you make will be applied to the singular object. Inspector will then re-display the parent object (list or dictionary), where you’ll be able to see that your changes were made.
+Changes you make will be applied to the singular object. Inspector will then re-display the parent object (list or dictionary), where you will be able to see that your changes were made.
 
 <span id="lists" class="section-header"></span> 
 ## Handling Lists
@@ -114,7 +112,7 @@ When a List Pagination value in [Settings](#settings) has been set, the list wil
 
 >Note: Converting a list to a dictionary may take some time for large lists.
 
-When using the Quick Look, Copy to Clipboard, and Share Actions alongside a set value for List Pagination, the entire list will be used with the action instead of the page slice you are viewing. 
+The entire list will be used with the Quick Look, Copy to Clipboard, Share, and Revert to Original Object actions.
 
 <span id="returning" class="section-header"></span> 
 ## Returning Object
@@ -122,9 +120,11 @@ Tap **Continue** to return the modified object back to the calling shortcut. Lis
 
 <span id="revert" class="section-header"></span> 
 ## Reverting Object
-You can revert back to the original object by tapping **Revert to Original Object**. Any changes you have made to the passed-in object will be removed. This operation cannot be undone.
+You can revert back to the original object at any depth level by tapping **Revert to Original Object**. Any changes you have made to the current object will be removed. This operation cannot be undone.
 
-![Reverting Back to the Original Object](https://atow.files.wordpress.com/2019/01/3c77c6b0-d26e-4a50-b232-1a792c3c13c8.png?w=1280)
+![Reverting Back to the Original Object](https://atow.files.wordpress.com/2019/01/8be50ec2-8bcb-41a7-b892-bd8e057c2708.png?w=1280)
+
+>Tip: If you want to revert back to the object as it was originally passed into Inspector, return to the root level by tapping either **Back to Top** or **Back** multiple times until only the **Continue** navigation menu item remains. Then, tap **Revert to Original Object**.
 
 <span id="settings" class="section-header"></span> 
 ## Changing Settings
@@ -133,8 +133,11 @@ You can adjust the following settings in Inspector:
 - **Adjust List Pagination**: Set the number of list items to be displayed on each page in Inspector. 
 - **Change Language**: Inspector is currently localized in English, but it’s ready for localization. If you would like to help with localizing Inspector, please <a href=“mailto:inspector+localization@tow.com”>contact me</a>.
 - **Copy to Local Clipboard**: Choose whether you want objects to be copied to the global clipboard (used with Handoff) or just the local clipboard of your iOS device.
+- **Show Debug Menu**: When enabled, additional menu items will appear in the Inspector main window for viewing the Object Key Stack, Current Object, and the Current Object Stack.
 
-![Inspector Settings](https://atow.files.wordpress.com/2019/01/6892a1d1-c260-40c8-9782-61876ecf74c0.png?w=1280)
+![Inspector Settings](https://atow.files.wordpress.com/2019/01/04c217b4-d484-4ddf-8782-0ae80ebc942a.png?w=1280)
+
+![Inspector Debug Menu](https://atow.files.wordpress.com/2019/01/3dad8404-a7e3-46d3-9c4d-e0517cd252cd.png?w=1280)
 
 <span id="update" class="section-header"></span> 
 ## Updating Inspector
