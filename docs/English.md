@@ -16,9 +16,10 @@ Inspector is a utility for shortcut developers to inspect and modify runtime obj
 - [Reverting Objects](#revert)
 - [Changing Settings](#settings)
 - [Updating Inspector](#update)
+- [Localization](#localization)
 - [License](#license)
 
-<hr />
+***
 
 <span id="installation" class="section-header"></span>
 ## Downloading and Installing 
@@ -26,7 +27,7 @@ The latest version of Inspector can be found at RoutineHub.co:
 
 <a href="https://routinehub.co/shortcut/1106” class=“button button-primary">Download Inspector from RoutineHub.co</a>
 
-<hr />
+***
 
 <span id="usage" class="section-header"></span> 
 ## Using Inspector
@@ -36,7 +37,7 @@ Place a Run Shortcut Action with "_inspector" as the shortcut immediately after 
 
 When your shortcut runs and reaches the Run Shortcut call, Inspector will launch and expand the object for viewing and editing. You can drill down into lists and dictionaries and view/modify singular objects. Objects that can’t be edited natively are displayed using Quick Look.
 
-<hr />
+***
 
 <span id="explore" class="section-header"></span>
 ## Exploring the Inspector Interface
@@ -68,7 +69,7 @@ This section displays the portion of the object currently being inspected. Tappi
 - **Help**: Opens the documentation you are reading now. 
 - **Settings**: Displays the [Inspector Settings menu](#settings).
 
-<hr />
+***
 
 <span id="modify" class="section-header"></span> 
 ## Modifying Objects 
@@ -78,7 +79,7 @@ Tapping on a singular object like Text, Numbers, or Booleans will open an editor
 
 Changes you make will be applied to the singular object. Inspector will then re-display the parent object (list or dictionary), where you will be able to see that your changes were made.
 
-<hr />
+***
 
 <span id="lists" class="section-header"></span> 
 ## Handling Lists
@@ -126,13 +127,13 @@ When a List Pagination value in [Settings](#settings) has been set, the list wil
 
 The entire list will be used with the Quick Look, Copy to Clipboard, Share, and Revert to Original Object actions.
 
-<hr />
+***
 
 <span id="return" class="section-header"></span> 
 ## Returning Objects
 Tap **Continue** to return the modified object back to the calling shortcut. Lists that had been converted to a dictionaries will be transformed back to a list prior to being returned. 
 
-<hr />
+***
 
 <span id="revert" class="section-header"></span> 
 ## Reverting Objects
@@ -142,7 +143,7 @@ You can revert back to the original object at any depth level by tapping **Rever
 
 >Tip: If you want to revert back to the object as it was originally passed into Inspector, return to the root level by tapping either **Back to Top** or **Back** multiple times until only the **Continue** navigation menu item remains. Then, tap **Revert to Original Object**.
 
-<hr />
+***
 
 <span id="settings" class="section-header"></span> 
 ## Changing Settings
@@ -157,7 +158,7 @@ You can adjust the following settings in Inspector:
 
 ![Inspector Debug Menu](https://atow.files.wordpress.com/2019/01/2735a491-483b-430d-99dd-514dc829319f.png?w=1280)
 
-<hr />
+***
 
 <span id="update" class="section-header"></span> 
 ## Updating Inspector
@@ -169,7 +170,16 @@ Updates are handled by [UpdateKit](http://mikebeas.com/updatekit/).
 
 ![Checking for Updates](https://atow.files.wordpress.com/2019/01/6848e2d9-8e38-4e89-9454-90ea3fa75a54.png?w-1280)
 
-<hr />
+<span id="localization"></span>
+## Localization
+Inspector is available in English, but the application is fully ready to be localized. I have developed an application, Localization Helper, that will assist you in localizing Inspector into your language.
+
+> [**Download Localization Helper from RoutineHub &raquo;**](https://routinehub.co/shortcut/1931)
+
+When the localization file is complete, either submit a pull request on [my GitHub page](https://github.com/adamtow/) or [contact me](mailto:inspector+localization@tow.com).
+
+
+***
 
 <span id="license" class="section-header"></span> 
 # License
