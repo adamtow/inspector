@@ -7,7 +7,8 @@
 	    "alert_unhandled": "Unhandled",
 	    "alert_unknownMethod": "Could not understand the {{func}} message.",
 	    "alert_updatekit_title": "UpdateKit Not Installed",
-	    "alert_updatekit": "UpdateKit is required to check for updates.",
+	    "alert_update_none": "You are currently running the latest version of Inspector.",
+	    "alert_update_none_title": "No Update Available",
 	    "alert_welcome": "Inspect and modify objects during the runtime of your shortcuts. Inspector is your go-to tool for debugging your shortcuts.",
 	    "error_noInput": "No Input Was Provided",
 	    "error_noItems": "The object is empty. ",
@@ -51,14 +52,15 @@
 	    "menu_settings": "Settings…",
 	    "menu_share": "Share…",
 	    "menu_true": "True",
-	    "menu_updatekit_install": "Install UpdatKit…",
-	    "menu_updatekit_later": "Later",
+	    "menu_update_cancel": "Update Later",
+	    "menu_update_confirm": "Download Update…",
 	    "menu_website": "Visit Inspector on the Web…",
 	    "prompt_base64": "This may be a base64 encoded object. Decode and Quick Look or view the string?",
 	    "prompt_jump": "Jump to Page",
 	    "prompt_language": "Choose Language",
 	    "prompt_pagination": "Choose how many list items to show at a time.",
 	    "prompt_revert": "Are you sure you want to revert the object back to the original object? This operation cannot be undone.",
-	    "prompt_settings": "Inspector Settings"
+	    "prompt_settings": "Inspector Settings",
+	    "prompt_update": "Inspector {{version}} is available. Would you like to download it now?\n\nRelease Notes\n{{notes}}"
 	}
 }
