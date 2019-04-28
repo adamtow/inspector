@@ -10,6 +10,7 @@
 	    "alert_update_none": "You are currently running the latest version of Inspector.",
 	    "alert_update_none_title": "No Update Available",
 	    "alert_welcome": "Inspect and modify objects during the runtime of your shortcuts. Inspector is your go-to tool for debugging your shortcuts.",
+	    "error_noKey": "The requested key `{{Key}}` could not be found in the current object.\n\nNote: Dictionary keys with leading or trailing spaces are not supported by Inspector.",
 	    "error_noInput": "No Input Was Provided",
 	    "error_noItems": "The object is empty. ",
 	    "error_NaN": "The inputted value is not a number",
